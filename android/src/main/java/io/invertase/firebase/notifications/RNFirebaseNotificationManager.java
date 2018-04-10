@@ -680,7 +680,7 @@ public class RNFirebaseNotificationManager {
       return;
     }
 
-    Intent notificationIntent = new Intent(context, RNFirebaseNotificationReceiver.class);
+    Intent notificationIntent = new Intent(context, RNFirebaseNotificationManager.class);
     notificationIntent.putExtras(notification);
     PendingIntent pendingIntent = PendingIntent.getBroadcast(context, notificationId.hashCode(),
       notificationIntent, PendingIntent.FLAG_UPDATE_CURRENT);
